@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt">
+  <head>
+    <!--baseHref-->
+    <base href="/" />
+    <!--/baseHref-->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>SYDLE UI Project</title>
+
+    <!-- SYDLE UI Dependencies -->
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@sydle/sydle-ui": "./lib/sydle-ui/index.esm.js",
+          "@sydle/sydle-one-components": "./lib/sydle-one-components/index.esm.js",
+          "@sydle/sydle-monaco": "./lib/sydle-monaco/index.esm.js"
+        }
+      }
+    </script>
+
+    <script type="module" src="lib/sydle-ui/sydle-ui.esm.js"></script>
+    <script nomodule src="lib/sydle-ui/sydle-ui.js"></script>
+    <link rel="stylesheet" href="lib/sydle-ui/sydle-ui.css" />
+
+    <script type="module" src="lib/sydle-one-components/sydle-one-components.esm.js"></script>
+    <script nomodule src="lib/sydle-one-components/sydle-one-components.js"></script>
+    <link rel="stylesheet" href="lib/sydle-one-components/sydle-one-components.css" />
+
+    <script type="module" src="lib/sydle-monaco/sydle-monaco.esm.js"></script>
+    <script nomodule src="lib/sydle-monaco/sydle-monaco.js"></script>
+    <link rel="stylesheet" href="lib/sydle-monaco/sydle-monaco.css" />
+
+    <!-- End SYDLE UI Dependencies -->
+
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SYDLE UI Icons -->
+    <script type="module" src="https://package-sydle-ui.sydle.com/sydle-ui-icons@1.0.0/sydle-ui-icons.esm.js"></script>
+
+    <!-- Build Files -->
+    <script type="module" src="build/elo-custom-fields-isaque.esm.js"></script>
+    <script nomodule src="build/elo-custom-fields-isaque.js"></script>
+    <link rel="stylesheet" href="build/elo-custom-fields-isaque.css" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- <script type="module" src="assets/polyfills.2960fb68898cf424.js"></script>
+    <script type="module" src="assets/runtime.dc378bf1fd07472e.js"></script>
+    <script type="module" src="assets/main.fbb792feaaafdafc.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="assets/styles.1da2a3e5ea7b57c1.css" /> -->
+
+    <script>
+      window['sydle-one-components'] = {
+        APPLICATION_IDENTIFIER: 'main',
+        BASE_API_URL: 'https://elogroup-partner.sydle.one/api/1/',
+        ORGANIZATION_IDENTIFIER: 'elogroup-partner',
+      };
+    </script>
+  </head>
+
+  <body>
+    <!-- <web-map-viewer></web-map-viewer> -->
+    <sy-one-api>
+      <sy-one-store>
+        <sy-one-auth-slot>
+          <!-- Classe do file tree -->
+          <!-- <sy-one-draft-form class-id="6462715a8d945360e009e8b2" /> -->
+          <!-- Classe do arquivo -->
+          <sy-one-draft-form class-id="6470d867a94f3d6cce3c2095" settings="{hideDefaultActionButtons: true}" />
+        </sy-one-auth-slot>
+      </sy-one-store>
+    </sy-one-api>
+    <!-- <elo-example></elo-example> -->
+  </body>
+</html>

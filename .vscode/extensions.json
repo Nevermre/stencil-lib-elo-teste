@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "nrwl.angular-console",
+    "esbenp.prettier-vscode",
+    "firsttris.vscode-jest-runner",
+    "stylelint.vscode-stylelint",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint"
+  ],
+  "unwantedRecommendations": ["rvest.vs-code-prettier-eslint"]
+}

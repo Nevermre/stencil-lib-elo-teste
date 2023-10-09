@@ -1,0 +1,526 @@
+@import '~@sydle/sydle-ui/styles/scss';
+@import 'classes';
+@import '../../../assets/ol-css.css';
+@import '../../../assets/ol-ext.css';
+@import '../../../assets/primeng.css';
+@import '../../../assets/styles.69e415ea1f692afd.css';
+
+.p-dropdown {
+  width: 100% !important;
+}
+
+@import '../../../assets/primeng/menu/menu.css';
+@import '../../../assets/primeng/accordion/accordion.css';
+@import '../../../assets/primeng/autocomplete/autocomplete.css';
+@import '../../../assets/primeng/avatar/avatar.css';
+@import '../../../assets/primeng/avatargroup/avatargroup.css';
+@import '../../../assets/primeng/badge/badge.css';
+@import '../../../assets/primeng/blockui/blockui.css';
+@import '../../../assets/primeng/breadcrumb/breadcrumb.css';
+@import '../../../assets/primeng/button/button.css';
+@import '../../../assets/primeng/calendar/calendar.css';
+@import '../../../assets/primeng/card/card.css';
+@import '../../../assets/primeng/carousel/carousel.css';
+@import '../../../assets/primeng/cascadeselect/cascadeselect.css';
+@import '../../../assets/primeng/checkbox/checkbox.css';
+@import '../../../assets/primeng/chip/chip.css';
+@import '../../../assets/primeng/chips/chips.css';
+@import '../../../assets/primeng/colorpicker/colorpicker.css';
+@import '../../../assets/primeng/common/common.css';
+@import '../../../assets/primeng/confirmpopup/confirmpopup.css';
+@import '../../../assets/primeng/contextmenu/contextmenu.css';
+@import '../../../assets/primeng/dataview/dataview.css';
+@import '../../../assets/primeng/dialog/dialog.css';
+@import '../../../assets/primeng/divider/divider.css';
+@import '../../../assets/primeng/dock/dock.css';
+@import '../../../assets/primeng/dropdown/dropdown.css';
+@import '../../../assets/primeng/editor/editor.css';
+@import '../../../assets/primeng/fileupload/fileupload.css';
+@import '../../../assets/primeng/galleria/galleria.css';
+@import '../../../assets/primeng/image/image.css';
+@import '../../../assets/primeng/inplace/inplace.css';
+@import '../../../assets/primeng/inputmask/inputmask.css';
+@import '../../../assets/primeng/inputnumber/inputnumber.css';
+@import '../../../assets/primeng/inputswitch/inputswitch.css';
+@import '../../../assets/primeng/inputtext/inputtext.css';
+@import '../../../assets/primeng/inputtextarea/inputtextarea.css';
+@import '../../../assets/primeng/knob/knob.css';
+@import '../../../assets/primeng/lightbox/lightbox.css';
+@import '../../../assets/primeng/listbox/listbox.css';
+@import '../../../assets/primeng/megamenu/megamenu.css';
+@import '../../../assets/primeng/menu/menu.css';
+@import '../../../assets/primeng/menubar/menubar.css';
+@import '../../../assets/primeng/message/message.css';
+@import '../../../assets/primeng/messages/messages.css';
+@import '../../../assets/primeng/multiselect/multiselect.css';
+@import '../../../assets/primeng/orderlist/orderlist.css';
+@import '../../../assets/primeng/organizationchart/organizationchart.css';
+@import '../../../assets/primeng/overlaypanel/overlaypanel.css';
+@import '../../../assets/primeng/paginator/paginator.css';
+@import '../../../assets/primeng/panel/panel.css';
+@import '../../../assets/primeng/panelmenu/panelmenu.css';
+@import '../../../assets/primeng/password/password.css';
+@import '../../../assets/primeng/picklist/picklist.css';
+@import '../../../assets/primeng/progressbar/progressbar.css';
+@import '../../../assets/primeng/progressspinner/progressspinner.css';
+@import '../../../assets/primeng/radiobutton/radiobutton.css';
+@import '../../../assets/primeng/rating/rating.css';
+@import '../../../assets/primeng/ripple/ripple.css';
+@import '../../../assets/primeng/scroller/scroller.css';
+@import '../../../assets/primeng/scrollpanel/scrollpanel.css';
+
+@import '../../../assets/primeng/scrolltop/scrolltop.css';
+@import '../../../assets/primeng/sidebar/sidebar.css';
+@import '../../../assets/primeng/skeleton/skeleton.css';
+@import '../../../assets/primeng/slidemenu/slidemenu.css';
+@import '../../../assets/primeng/slider/slider.css';
+@import '../../../assets/primeng/speeddial/speeddial.css';
+@import '../../../assets/primeng/spinner/spinner.css';
+@import '../../../assets/primeng/splitbutton/splitbutton.css';
+@import '../../../assets/primeng/splitter/splitter.css';
+@import '../../../assets/primeng/steps/steps.css';
+@import '../../../assets/primeng/table/table.css';
+@import '../../../assets/primeng/tabmenu/tabmenu.css';
+@import '../../../assets/primeng/tabview/tabview.css';
+
+@import '../../../assets/primeng/tag/tag.css';
+@import '../../../assets/primeng/terminal/terminal.css';
+@import '../../../assets/primeng/tieredmenu/tieredmenu.css';
+@import '../../../assets/primeng/timeline/timeline.css';
+
+@import '../../../assets/primeng/toast/toast.css';
+@import '../../../assets/primeng/toolbar/toolbar.css';
+@import '../../../assets/primeng/tooltip/tooltip.css';
+@import '../../../assets/primeng/tree/tree.css';
+@import '../../../assets/primeng/treeselect/treeselect.css';
+@import '../../../assets/primeng/treetable/treetable.css';
+@import '../../../assets/wc-map-viewer.component.css';
+
+.map {
+  width: 100%;
+  height: 600px;
+}
+
+.control {
+  border-radius: 4px;
+}
+
+.list-items {
+  padding: 0
+}
+
+.fullscreen:full-screen {
+  height: 100%;
+  margin: 0;
+}
+
+.fullscreen:fullscreen {
+  height: 100%;
+}
+
+.fullscreen {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.mapa .ol-zoom {
+  top: 3.5em;
+  right: 0.5em;
+  left: unset;
+}
+
+.mapa:fullscreen {
+  height: 100%;
+}
+
+.mapa:full-screen {
+  height: 100% !important;
+  margin: 0;
+}
+
+.mapa .ol-rotate {
+  top: 3em;
+}
+
+.control {
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  width: 300px;
+  max-width: 100%;
+  margin-left: auto;
+
+}
+
+.ol-mouse-position {
+  top: auto;
+  right: 0.5em;
+  bottom: 10px;
+  padding: 5px;
+  font-size: 0.9em;
+  color: black;
+  background: rgb(255 255 255 / 50%);
+  border-radius: 10px;
+}
+
+.ol-attribution {
+  display: none;
+}
+
+.dropdownButton {
+  /* padding: 16px; */
+  font-size: 16px;
+  color: gray;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.gifDialog .p-dialog .p-dialog-content {
+  padding: 5px;
+}
+
+.gifDialog .p-dialog .p-dialog-header {
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.gifDialog .p-dialog .p-dialog-header .p-dialog-title {
+  font-size: 1rem;
+}
+
+.gifDialog {
+  position: absolute;
+
+  /* top: 40%; */
+  left: 30%;
+
+  /* transform: translate(-50%, -50%); */
+  z-index: 10000;
+}
+
+.dropdown-content {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  min-width: 100px;
+  /* Adicione o tamanho mínimo que desejar */
+  min-height: 100px;
+  /* Adicione o tamanho mínimo que desejar */
+  padding: 0 20px;
+  overflow: auto;
+  resize: both;
+  background-color: #f9f9f9;
+  border-color: gray;
+  border-top: 1px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 40%);
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.list-item-layer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0.5rem 1.0rem 0.5rem 1rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 10px;
+
+}
+
+.list-item-layer:hover {
+  background-color: rgb(243 243 243);
+}
+
+.item-title {
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.drag {
+  cursor: move;
+}
+
+.control-label {
+  overflow: hidden;
+  font-size: 1.0em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ol-popup {
+  position: absolute;
+  bottom: 12px;
+  left: -50px;
+  min-width: 180px;
+  padding: 15px;
+
+  /* top: -30px; */
+  background-color: white;
+
+  /* --webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2)); */
+  filter: drop-shadow(0 1px 4px rgb(0 0 0 / 20%));
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.ol-popup::after,
+.ol-popup::before {
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  content: " ";
+  border: solid transparent;
+}
+
+.ol-popup::after {
+  left: 48px;
+  margin-left: -10px;
+  border-width: 10px;
+  border-top-color: white;
+}
+
+.ol-popup::before {
+  left: 48px;
+  margin-left: -11px;
+  border-width: 11px;
+  border-top-color: #ccc;
+}
+
+.opacity {
+  width: 30%;
+  cursor: pointer;
+}
+
+::ng-deep .ol-zoom {
+  margin-top: 50px;
+}
+
+::ng-deep .ol-zoomslider {
+  margin-top: 50px;
+}
+
+.ol-zoomslider {
+  top: 5.5em;
+  right: 0.5em;
+  left: unset;
+}
+
+.ol-zoom .ol-zoom-out {
+  margin-top: 13.5em;
+}
+
+#map-popup-content {
+  max-height: 200px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.ol-popup-closer {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ol-popup-closer::after {
+  content: "✖";
+}
+
+
+
+/* basemap */
+.base-map-container {
+  position: absolute;
+
+  /* z-index: 99999; */
+  top: 80px;
+  right: 0.5em;
+  display: flex;
+
+}
+
+.btn-base-map {
+  padding: 0.5rem 1.0rem;
+  color: gray;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.btn-base-map:hover {
+  margin: -1px;
+  border: 1px solid #d0d0d0;
+}
+
+.btn-base-map.active {
+  box-shadow: 0 0 0 0.125rem rgb(13 128 250 / 50%);
+
+}
+
+.drop-base-map-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.drop-base-map-menu {
+  position: absolute;
+  display: none;
+  white-space: nowrap;
+  border-radius: 25px;
+}
+
+.drop-base-map-menu.active {
+  position: absolute;
+  display: block;
+  white-space: nowrap;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.drop-base-mapdown {
+  top: 100%;
+  margin-top: 0.125rem;
+}
+
+.dropdown-option .p-dropdown {
+  width: 200px;
+}
+
+.dropdown-option {
+  padding-right: 30px;
+}
+
+.dropdown-option .p-dropdown .p-dropdown-label {
+  padding: 6px;
+}
+
+.drop-base-mapup {
+  bottom: 100%;
+  margin-bottom: 0.125rem;
+}
+
+
+.drop-base-mapleft {
+  top: 0%;
+  right: 100%;
+  margin-right: 0.125rem;
+}
+
+.drop-base-mapright {
+  top: 0%;
+  left: 100%;
+  margin-left: 0.125rem;
+}
+
+.drop-base-map-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #343434;
+  text-decoration: none;
+}
+
+.layer-icon {
+  width: 30px;
+  height: 30px;
+  content: url('./assets/layers-icon.svg');
+}
+
+.compass {
+  top: auto !important;
+  right: 0.5em;
+  bottom: 40px;
+  width: 60px;
+}
+
+.ol-compassctrl {
+  top: auto !important;
+  bottom: 40px;
+  width: 60px;
+  height: 60px;
+}
+
+.legend {
+  position: absolute;
+  bottom: 50px;
+  z-index: 9999;
+  display: inline-block !important;
+  width: 350px;
+}
+
+.p-dialog-mask {
+  position: relative !important;
+}
+
+.menuItens .p-tieredmenu {
+  width: 70px;
+}
+
+.menuItens .p-tieredmenu .p-menuitem-link .p-menuitem-icon {
+  font-size: 20px;
+}
+
+.p-fieldset .p-fieldset-content {
+  padding: 0;
+}
+
+.p-fieldset.p-fieldset-toggleable .p-fieldset-legend a {
+  padding: 0.4rem;
+  font-size: 10px;
+}
+
+.p-fieldset {
+  color: black;
+  background: none;
+}
+
+#layertree {
+  padding-top: 10px;
+}
+
+.ol-red {
+  font-weight: bold;
+  color: #969595;
+}
+
+.p-divider-content {
+  background-color: #f9f9f9 !important;
+}
+
+.resizable-container {
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+  /* Garante que o conteúdo redimensionado seja rolável */
+  resize: both;
+  /* Este estilo é importante para mostrar o cursor de redimensionamento */
+  border: 1px solid black;
+}

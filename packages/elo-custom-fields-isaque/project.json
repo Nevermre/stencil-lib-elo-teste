@@ -1,0 +1,108 @@
+{
+  "name": "elo-custom-fields-isaque",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/elo-custom-fields-isaque/src",
+  "projectType": "library",
+  "generators": {
+    "@nxext/stencil:component": {
+      "style": "scss"
+    }
+  },
+  "tags": [],
+  "targets": {
+    "test": {
+      "executor": "@nxext/stencil:test",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "packages/elo-custom-fields-isaque/tsconfig.lib.json",
+        "configPath": "packages/elo-custom-fields-isaque/stencil.config.ts",
+        "outputPath": "dist/packages/elo-custom-fields-isaque"
+      }
+    },
+    "build": {
+      "executor": "@nxext/stencil:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "packages/elo-custom-fields-isaque/tsconfig.lib.json",
+        "configPath": "packages/elo-custom-fields-isaque/stencil.config.ts",
+        "outputPath": "dist/packages/elo-custom-fields-isaque",
+        "docsReadme": true,
+		"stats": true
+      },
+      "configurations": {
+        "production": {
+          "dev": false,
+          "prod": true
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nxext/stencil:serve",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "packages/elo-custom-fields-isaque/tsconfig.lib.json",
+        "configPath": "packages/elo-custom-fields-isaque/stencil.config.ts",
+        "outputPath": "dist/packages/elo-custom-fields-isaque",
+        "dev": true
+      }
+    },
+    "e2e": {
+      "executor": "@nxext/stencil:e2e",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "packages/elo-custom-fields-isaque/tsconfig.lib.json",
+        "configPath": "packages/elo-custom-fields-isaque/stencil.config.ts",
+        "outputPath": "dist/packages/elo-custom-fields-isaque"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/elo-custom-fields-isaque/**/*.{ts,tsx}"]
+      }
+    },
+    "stylelint": {
+      "executor": "nx-stylelint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/elo-custom-fields-isaque/**/*.css",
+          "packages/elo-custom-fields-isaque/**/*.scss"
+        ]
+      }
+    },
+    "external-libs": {
+      "executor": "@sydle/nx-sydle-ui:external-libs",
+      "configurations": {
+        "undo": {
+          "undo": true
+        }
+      }
+    },
+    "start": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "nx run elo-custom-fields-isaque:external-libs",
+          "nx run elo-custom-fields-isaque:serve"
+        ],
+        "parallel": false
+      }
+    },
+    "storybook": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "nx run elo-custom-fields-isaque:start",
+          "nx run elo-custom-fields-isaque:serve-storybook"
+        ],
+        "parallel": true
+      }
+    }
+  }
+}

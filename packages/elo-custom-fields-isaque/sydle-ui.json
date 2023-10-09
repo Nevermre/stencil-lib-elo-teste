@@ -1,0 +1,7 @@
+{
+  "componentPrefix": "elo",
+  "external-stencil-libs": [
+    "@sydle/sydle-ui",
+    "@sydle/sydle-one-components"
+  ]
+}

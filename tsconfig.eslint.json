@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.base.json",
+  // Don't know why but it was necessary to specify this folder '"packages/**/.storybook/*"' to lint its inside files.
+  "include": ["packages/**/*", "packages/**/.storybook/*", ".storybook", "tools", "jest.config.ts"],
+  "exclude": ["node_modules"]
+}

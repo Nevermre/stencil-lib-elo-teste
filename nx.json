@@ -1,0 +1,28 @@
+{
+  "extends": "nx/presets/npm.json",
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "npmScope": "my-workspace",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e", "stylelint", "build-storybook"]
+      }
+    }
+  },
+  "targetDefaults": {
+    "test": {
+      "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"]
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nxext/stencil"
+  },
+  "implicitDependencies": {
+    "package.json": "*",
+    ".stylelintrc.json": "*"
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt">
+  <head>
+    <!--baseHref-->
+    <base href="/" />
+    <!--/baseHref-->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>SYDLE UI Project</title>
+
+    <!-- SYDLE UI Dependencies -->
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@sydle/sydle-ui": "./lib/sydle-ui/index.esm.js",
+          "@sydle/sydle-one-components": "./lib/sydle-one-components/index.esm.js"
+        }
+      }
+    </script>
+
+    <script type="module" src="lib/sydle-ui/sydle-ui.esm.js"></script>
+    <script nomodule src="lib/sydle-ui/sydle-ui.js"></script>
+    <link rel="stylesheet" href="lib/sydle-ui/sydle-ui.css" />
+
+    <script type="module" src="lib/sydle-one-components/sydle-one-components.esm.js"></script>
+    <script nomodule src="lib/sydle-one-components/sydle-one-components.js"></script>
+    <link rel="stylesheet" href="lib/sydle-one-components/sydle-one-components.css" />
+
+    <!-- End SYDLE UI Dependencies -->
+
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SYDLE UI Icons -->
+    <script type="module" src="https://package-sydle-ui.sydle.com/sydle-ui-icons@1.0.0/sydle-ui-icons.esm.js"></script>
+
+    <!-- Build Files -->
+    <script type="module" src="build/test.esm.js"></script>
+    <script nomodule src="build/test.js"></script>
+    <link rel="stylesheet" href="build/test.css" />
+  </head>
+
+  <body>
+    <test-example></test-example>
+  </body>
+</html>

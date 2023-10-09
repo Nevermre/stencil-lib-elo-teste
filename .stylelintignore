@@ -1,0 +1,7 @@
+# enable whitelist
+*
+!*/
+
+!packages/**/*
+packages/**/src/**/_tokens.scss
+packages/**/src/**/assets/**/*

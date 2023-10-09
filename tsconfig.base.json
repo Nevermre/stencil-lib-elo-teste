@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@my-workspace/elo-custom-fields-isaque": ["dist/packages/elo-custom-fields-isaque"],
+      "@my-workspace/elo-custom-fields-isaque/*": ["dist/packages/elo-custom-fields-isaque/dist/components/*"],
+      "@my-workspace/elo-custom-fields-isaque/loader": ["dist/packages/elo-custom-fields-isaque/loader"],
+      "@my-workspace/test": ["dist/packages/test"],
+      "@my-workspace/test/*": ["dist/packages/test/dist/components/*"],
+      "@my-workspace/test/loader": ["dist/packages/test/loader"]
+    },
+    "strictNullChecks": true
+  },
+  "exclude": ["node_modules", "tmp"],
+  "references": [
+    {
+      "path": "./.storybook/tsconfig.json"
+    }
+  ]
+}

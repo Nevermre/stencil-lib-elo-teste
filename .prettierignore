@@ -1,0 +1,23 @@
+# enable whitelist
+*
+!*/
+
+# folders
+!.storybook/*
+!.vscode/*
+
+# src
+!packages/**/*
+packages/**/docs.d.ts
+packages/**/docs.json
+packages/**/src/components.d.ts
+packages/**/src/**/readme.md
+packages/**/src/**/_tokens.scss
+packages/**/src/**/assets/**/*
+packages/**/src/**/*.min.css
+
+# root files
+!/*.json
+!/*.js
+!/*.ts
+!/readme.md
